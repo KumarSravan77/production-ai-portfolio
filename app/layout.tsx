@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const title = "Sravan Kumar — Production AI Engineer";
-const description = "Twelve deployable projects proving production AI engineering across reliability, cost, grounding, evaluation, inference, observability, security, and AI-SRE.";
+const description = "Fifteen deployable projects proving production AI engineering across reliability, cost, grounding, evaluation, inference, observability, security, and AI-SRE.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();

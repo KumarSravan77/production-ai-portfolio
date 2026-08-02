@@ -2,7 +2,7 @@
 
 **Public portfolio:** https://kumarsravan77.github.io/production-ai-portfolio/
 
-A responsive, evidence-first portfolio presenting twelve independently
+A responsive, evidence-first portfolio presenting fifteen independently
 deployable production AI engineering projects across API reliability, cost
 controls, structured output, RAG, approvals, streaming UX, evaluation, local
 inference, observability, security, architecture, and AI-SRE.

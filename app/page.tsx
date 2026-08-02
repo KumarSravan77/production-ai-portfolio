@@ -11,6 +11,9 @@ const projects = [
   { n: "10", title: "Security Guardrails", proof: "Defense in depth at every boundary", text: "Prompt-injection detection, bidirectional PII redaction, safe fingerprints, and monitor/block modes.", tags: ["Security", "PII", "ASGI"], repo: "security-guardrail-middleware" },
   { n: "11", title: "Public Architecture", proof: "Decisions are as reviewable as code", text: "System map, trust boundaries, ADRs, verification protocol, and a five-minute demo walkthrough.", tags: ["Architecture", "ADRs", "Benchmarks"], repo: "ai-production-architecture" },
   { n: "12", title: "ARIA AI-SRE Platform", proof: "Incidents move from signal to controlled recovery", text: "Open-source incident investigation with Kubernetes telemetry, RAG runbooks, policy checks, approval-gated self-healing, and recovery validation.", tags: ["AI-SRE", "Kubernetes", "Self-healing"], repo: "aria" },
+  { n: "13", title: "Fire Drill", proof: "Resilience is tested before an outage", text: "Vendor-neutral chaos experiment planning with production hard blocks, bounded blast radius, rollback contracts, and auditable report cards.", tags: ["Chaos engineering", "Safety", "Resilience"], repo: "fire-drill-chaos-engineering" },
+  { n: "14", title: "Incident Investigation Copilot", proof: "Root-cause hypotheses remain tied to evidence", text: "A structured investigation API that builds timelines, ranks supported hypotheses, recommends checks, and exposes missing evidence.", tags: ["Incidents", "Evidence", "FastAPI"], repo: "incident-investigation-copilot" },
+  { n: "15", title: "On-Call SRE Agent", proof: "Triage is fast without bypassing authority", text: "Runbook retrieval, alert prioritization, diagnostic checklists, and explicit human approval for production-changing actions.", tags: ["On-call", "Runbooks", "Triage"], repo: "on-call-sre-agent" },
 ];
 
 const stages = ["Protect", "Validate", "Ground", "Authorize", "Observe", "Evaluate"];
@@ -27,11 +30,11 @@ export default function Home() {
         <p className="eyebrow"><span className="status-dot" /> Available for AI engineering work</p>
         <h1>I build AI systems<br />that survive <em>production.</em></h1>
         <div className="hero-bottom">
-          <p>Twelve deployable projects covering reliability, cost, grounding, evaluation, inference, observability, security, and AI-SRE—built as working evidence, not slideware.</p>
+          <p>Fifteen deployable projects covering reliability, cost, grounding, evaluation, inference, observability, security, and AI-SRE—built as working evidence, not slideware.</p>
           <div className="hero-actions"><a className="button primary" href="#work">Explore the systems ↓</a><a className="button" href="https://github.com/KumarSravan77" target="_blank" rel="noreferrer">View GitHub ↗</a></div>
         </div>
         <div className="signal" aria-label="Portfolio statistics">
-          <div><strong>12</strong><span>Production projects</span></div>
+          <div><strong>15</strong><span>Production projects</span></div>
           <div><strong>10</strong><span>Control layers</span></div>
           <div><strong>01</strong><span>Coherent platform</span></div>
         </div>
