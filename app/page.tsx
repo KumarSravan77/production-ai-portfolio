@@ -1,5 +1,5 @@
 const projects = [
-  { n: "01", title: "Production API Wrapper", proof: "Stable APIs under pressure", text: "FastAPI proxy with rate limits, provider error mapping, signed webhooks, and request correlation.", tags: ["FastAPI", "Webhooks", "Reliability"], repo: "production-api-wrapper" },
+  { n: "01", title: "Production LLM Gateway", proof: "One governed interface across model providers", text: "OpenAI-compatible FastAPI edge with LiteLLM routing, fallbacks, streaming, cache, virtual-key spend controls, and alias-only model policy.", tags: ["LiteLLM", "FastAPI", "Model routing"], repo: "production-api-wrapper" },
   { n: "02", title: "Token Cost Estimator", proof: "Spend controlled before inference", text: "Preflight estimates, endpoint-level accounting, budget reservations, and threshold alerts.", tags: ["FinOps", "Budgets", "Usage"], repo: "token-cost-estimator" },
   { n: "03", title: "Validated JSON Agent", proof: "Model output treated as untrusted", text: "Pydantic contracts, bounded repair retries, and complete parse-failure diagnostics.", tags: ["Pydantic", "Schemas", "Retries"], repo: "validated-json-agent" },
   { n: "04", title: "Cited RAG Bot", proof: "Every grounded claim carries evidence", text: "PDF Q&A with hybrid retrieval, reranking, and citations tied to source pages.", tags: ["RAG", "Hybrid search", "Citations"], repo: "cited-rag-bot" },

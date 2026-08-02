@@ -17,7 +17,7 @@ test("renders the completed production AI portfolio", async () => {
   const html = await response.text();
   assert.match(html, /<title>Sravan Kumar — Production AI Engineer<\/title>/i);
   assert.match(html, /AI systems/);
-  assert.match(html, /Production API Wrapper/);
+  assert.match(html, /Production LLM Gateway/);
   assert.match(html, /Public Architecture/);
   assert.match(html, /<strong>15<\/strong><span>Production projects<\/span>/);
   assert.match(html, /og\.png/);
