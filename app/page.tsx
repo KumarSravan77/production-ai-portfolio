@@ -10,6 +10,7 @@ const projects = [
   { n: "09", title: "Traced Deployment Pipeline", proof: "Failures explain themselves", text: "Dockerized service with OpenTelemetry traces, Prometheus alerts, cost metrics, and Grafana dashboards.", tags: ["OpenTelemetry", "Docker", "Grafana"], repo: "traced-deployment-pipeline" },
   { n: "10", title: "Security Guardrails", proof: "Defense in depth at every boundary", text: "Prompt-injection detection, bidirectional PII redaction, safe fingerprints, and monitor/block modes.", tags: ["Security", "PII", "ASGI"], repo: "security-guardrail-middleware" },
   { n: "11", title: "Public Architecture", proof: "Decisions are as reviewable as code", text: "System map, trust boundaries, ADRs, verification protocol, and a five-minute demo walkthrough.", tags: ["Architecture", "ADRs", "Benchmarks"], repo: "ai-production-architecture" },
+  { n: "12", title: "ARIA AI-SRE Platform", proof: "Incidents move from signal to controlled recovery", text: "Open-source incident investigation with Kubernetes telemetry, RAG runbooks, policy checks, approval-gated self-healing, and recovery validation.", tags: ["AI-SRE", "Kubernetes", "Self-healing"], repo: "aria" },
 ];
 
 const stages = ["Protect", "Validate", "Ground", "Authorize", "Observe", "Evaluate"];
@@ -26,11 +27,11 @@ export default function Home() {
         <p className="eyebrow"><span className="status-dot" /> Available for AI engineering work</p>
         <h1>I build AI systems<br />that survive <em>production.</em></h1>
         <div className="hero-bottom">
-          <p>Eleven deployable projects covering reliability, cost, grounding, evaluation, inference, observability, and security—built as working evidence, not slideware.</p>
+          <p>Twelve deployable projects covering reliability, cost, grounding, evaluation, inference, observability, security, and AI-SRE—built as working evidence, not slideware.</p>
           <div className="hero-actions"><a className="button primary" href="#work">Explore the systems ↓</a><a className="button" href="https://github.com/KumarSravan77" target="_blank" rel="noreferrer">View GitHub ↗</a></div>
         </div>
         <div className="signal" aria-label="Portfolio statistics">
-          <div><strong>11</strong><span>Production projects</span></div>
+          <div><strong>12</strong><span>Production projects</span></div>
           <div><strong>10</strong><span>Control layers</span></div>
           <div><strong>01</strong><span>Coherent platform</span></div>
         </div>
