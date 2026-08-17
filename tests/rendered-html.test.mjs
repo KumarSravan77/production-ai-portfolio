@@ -19,7 +19,7 @@ test("renders the completed production AI portfolio", async () => {
   assert.match(html, /AI systems/);
   assert.match(html, /Production LLM Gateway/);
   assert.match(html, /Public Architecture/);
-  assert.match(html, /<strong>16<\/strong><span>Production projects<\/span>/);
+  assert.match(html, /<strong>17<\/strong><span>Production projects<\/span>/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
@@ -33,6 +33,7 @@ test("includes every public project and removes starter assets", async () => {
     "security-guardrail-middleware", "ai-production-architecture", "aria",
     "fire-drill-chaos-engineering", "incident-investigation-copilot", "on-call-sre-agent",
     "canadian-retail-mlops-platform",
+    "production-agent-gateway",
   ];
   for (const repository of repositories) assert.match(page, new RegExp(repository));
   await access(new URL("../public/og.png", import.meta.url));

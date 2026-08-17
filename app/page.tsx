@@ -15,6 +15,7 @@ const projects = [
   { n: "14", title: "Incident Investigation Copilot", proof: "Every hypothesis stays tied to evidence", text: "FastAPI investigation service that builds incident timelines, ranks evidence-backed hypotheses, recommends diagnostic checks, and exposes missing evidence.", tags: ["FastAPI", "Evidence", "Incident RCA"], repo: "incident-investigation-copilot" },
   { n: "15", title: "On-Call SRE Agent", proof: "Fast triage without autonomous production changes", text: "Read-only assistant that prioritizes alerts, retrieves relevant runbooks, assembles diagnostic checklists, and flags every mutating action for human approval.", tags: ["On-call", "Runbooks", "Safe triage"], repo: "on-call-sre-agent" },
   { n: "16", title: "Canadian Retail MLOps Platform", proof: "Features, training, and serving operate as one governed system", text: "Kinesis and Flink feature generation, Iceberg lineage, Airflow and Metaflow training, immutable ECR promotion, SageMaker serving, and multi-account AWS CDK.", tags: ["MLOps", "Apache Flink", "SageMaker"], repo: "canadian-retail-mlops-platform" },
+  { n: "17", title: "Production Agent Gateway", proof: "Models propose actions; policy grants authority", text: "Tool registry, identity scopes, JSON Schema contracts, independent approvals, signed execute-once tickets, idempotency, run budgets, revocation, SSRF defense, and privacy-safe audits.", tags: ["Agent security", "Human approval", "Tool policy"], repo: "production-agent-gateway" },
 ];
 
 const stages = ["Protect", "Validate", "Ground", "Authorize", "Observe", "Evaluate"];
@@ -31,11 +32,11 @@ export default function Home() {
         <p className="eyebrow"><span className="status-dot" /> Available for AI engineering work</p>
         <h1>I build AI systems<br />that survive <em>production.</em></h1>
         <div className="hero-bottom">
-          <p>Sixteen deployable projects covering reliability, cost, grounding, evaluation, inference, observability, security, AI-SRE, and MLOps—built as working evidence, not slideware.</p>
+          <p>Seventeen deployable projects covering reliability, cost, grounding, evaluation, inference, observability, security, AI-SRE, MLOps, and agent governance—built as working evidence, not slideware.</p>
           <div className="hero-actions"><a className="button primary" href="#work">Explore the systems ↓</a><a className="button" href="https://github.com/KumarSravan77" target="_blank" rel="noreferrer">View GitHub ↗</a></div>
         </div>
         <div className="signal" aria-label="Portfolio statistics">
-          <div><strong>16</strong><span>Production projects</span></div>
+          <div><strong>17</strong><span>Production projects</span></div>
           <div><strong>10</strong><span>Control layers</span></div>
           <div><strong>01</strong><span>Coherent platform</span></div>
         </div>
