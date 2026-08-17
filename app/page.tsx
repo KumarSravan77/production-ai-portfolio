@@ -1,5 +1,5 @@
 const projects = [
-  { n: "01", title: "Production LLM Gateway", proof: "One governed interface across model providers", text: "OpenAI-compatible FastAPI edge with LiteLLM routing, fallbacks, streaming, cache, virtual-key spend controls, and alias-only model policy.", tags: ["LiteLLM", "FastAPI", "Model routing"], repo: "production-api-wrapper" },
+  { n: "01", title: "Production LLM Gateway", proof: "One governed interface across model providers", text: "OpenAI-compatible FastAPI edge with LiteLLM routing, streaming, Redis rate limits, sensitive-input redaction, virtual-key spend controls, and alias-only model policy.", tags: ["LiteLLM", "FastAPI", "Model routing"], repo: "production-api-wrapper" },
   { n: "02", title: "Token Cost Estimator", proof: "Spend controlled before inference", text: "Preflight estimates, endpoint-level accounting, budget reservations, and threshold alerts.", tags: ["FinOps", "Budgets", "Usage"], repo: "token-cost-estimator" },
   { n: "03", title: "Validated JSON Agent", proof: "Model output treated as untrusted", text: "Pydantic contracts, bounded repair retries, and complete parse-failure diagnostics.", tags: ["Pydantic", "Schemas", "Retries"], repo: "validated-json-agent" },
   { n: "04", title: "Cited RAG Bot", proof: "Every grounded claim carries evidence", text: "PDF Q&A with hybrid retrieval, reranking, and citations tied to source pages.", tags: ["RAG", "Hybrid search", "Citations"], repo: "cited-rag-bot" },
@@ -14,6 +14,7 @@ const projects = [
   { n: "13", title: "Fire Drill", proof: "Agent-driven resilience with human authority", text: "Approval-gated AWS FIS agent for bounded EKS pod faults, verified cloud identity, CloudWatch stop conditions, and a durable audit trail.", tags: ["AWS FIS", "EKS", "Human approval"], repo: "fire-drill-chaos-engineering" },
   { n: "14", title: "Incident Investigation Copilot", proof: "Every hypothesis stays tied to evidence", text: "FastAPI investigation service that builds incident timelines, ranks evidence-backed hypotheses, recommends diagnostic checks, and exposes missing evidence.", tags: ["FastAPI", "Evidence", "Incident RCA"], repo: "incident-investigation-copilot" },
   { n: "15", title: "On-Call SRE Agent", proof: "Fast triage without autonomous production changes", text: "Read-only assistant that prioritizes alerts, retrieves relevant runbooks, assembles diagnostic checklists, and flags every mutating action for human approval.", tags: ["On-call", "Runbooks", "Safe triage"], repo: "on-call-sre-agent" },
+  { n: "16", title: "Canadian Retail MLOps Platform", proof: "Features, training, and serving operate as one governed system", text: "Kinesis and Flink feature generation, Iceberg lineage, Airflow and Metaflow training, immutable ECR promotion, SageMaker serving, and multi-account AWS CDK.", tags: ["MLOps", "Apache Flink", "SageMaker"], repo: "canadian-retail-mlops-platform" },
 ];
 
 const stages = ["Protect", "Validate", "Ground", "Authorize", "Observe", "Evaluate"];
@@ -30,11 +31,11 @@ export default function Home() {
         <p className="eyebrow"><span className="status-dot" /> Available for AI engineering work</p>
         <h1>I build AI systems<br />that survive <em>production.</em></h1>
         <div className="hero-bottom">
-          <p>Fifteen deployable projects covering reliability, cost, grounding, evaluation, inference, observability, security, and AI-SRE—built as working evidence, not slideware.</p>
+          <p>Sixteen deployable projects covering reliability, cost, grounding, evaluation, inference, observability, security, AI-SRE, and MLOps—built as working evidence, not slideware.</p>
           <div className="hero-actions"><a className="button primary" href="#work">Explore the systems ↓</a><a className="button" href="https://github.com/KumarSravan77" target="_blank" rel="noreferrer">View GitHub ↗</a></div>
         </div>
         <div className="signal" aria-label="Portfolio statistics">
-          <div><strong>15</strong><span>Production projects</span></div>
+          <div><strong>16</strong><span>Production projects</span></div>
           <div><strong>10</strong><span>Control layers</span></div>
           <div><strong>01</strong><span>Coherent platform</span></div>
         </div>
